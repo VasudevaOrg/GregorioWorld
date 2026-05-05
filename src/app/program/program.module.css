@@ -1,0 +1,158 @@
+.program {
+  width: 100%;
+}
+
+.hero {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.plan {
+  padding: 3rem 2rem;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+  border-color: var(--primary-blue);
+  background: var(--bg-light);
+  transform: scale(1.05);
+}
+
+.plan h3 {
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.plan ul {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.plan ul li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.plan ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.enrollBtn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary-blue);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.enrollBtn:hover {
+  background: var(--secondary-blue);
+}
+
+.testimonialSection {
+  background: var(--bg-light);
+  padding: 6rem 0;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.testimonialCard {
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonialCard p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonialCard h4 {
+  margin-bottom: 0.2rem;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 3rem auto 0;
+}
+
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.faqItem summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.faqItem p {
+  padding: 1rem 0.5rem 0.5rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 991px) {
+  .pricingGrid, .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .highlight {
+    transform: scale(1);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+}

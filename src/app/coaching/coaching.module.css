@@ -1,0 +1,121 @@
+.coaching {
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/coaching-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.areaCard {
+  padding: 2.5rem;
+  background: var(--bg-light);
+  border-radius: 15px;
+  transition: var(--transition-smooth);
+}
+
+.areaCard:hover {
+  background: var(--white);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+.areaCard h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.areaCard ul li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.areaCard ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+}
+
+.pathsSection {
+  background: var(--primary-blue);
+  padding: 8rem 0;
+}
+
+.pathsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.pathCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: var(--white);
+  transition: var(--transition-smooth);
+}
+
+.pathCard:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-10px);
+}
+
+.pathCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.pathCard p {
+  opacity: 0.8;
+  margin-bottom: 2.5rem;
+  min-height: 80px;
+}
+
+.pathBtn {
+  background: var(--white);
+  color: var(--primary-blue);
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.pathBtn:hover {
+  background: var(--bg-light);
+  transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+  .pathsGrid {
+    grid-template-columns: 1fr;
+  }
+}
