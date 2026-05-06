@@ -5,16 +5,29 @@ const ClientsSection = () => {
   const scrollRef = useRef(null);
 
   const originalLogos = [
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-01-q0p6es9ibut92u4boqa51z8r5riohgwuic8f49w2yo.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-04-q0p6f3jklv8oy5nxuv5nvweaadz31u5mjw28vlfcw0.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-09-q0p6f96lqvgevtfqxxlfauz1up7ac0s0knz5r96zuo.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-02-q0p6fb2a4jizj1d0myeofuhz1gy0rezh8xa4pt47i8.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-06-q0p6fb2a4jizj1d0myeofuhz1gy0rezh8xa4pt47i8.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-07-q0p6erbo50ryr85ou7vihhhakdnb9rt467kxmzxh4w.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-12-q0p6fgpb9jqpgp4tq0ufut2qls681llv9p71lgvugw.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-03-q0p6eaekq04sy8u9l0k88lqzvfypf7xy3vu700mk8w.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/logos-clients-BYF-08-q0p6ejsymcho6cgm24mhxjdltaodk6z9h6d1ss8mio.png?w=1200&ssl=1",
-    "https://i0.wp.com/gregorio.world/wp-content/uploads/elementor/thumbs/4-1-1-q0p6gdlnwqzqr1t1dx2ds2rve9o2j08h2811e5j2f4.png?w=1200&ssl=1"
+    "/images/1.png",
+    "/images/2.png",
+    "/images/3.png",
+    "/images/4.png",
+    "/images/5.png",
+    "/images/6.png",
+    "/images/7.jpg",
+    "/images/8.png",
+    "/images/9.png",
+    "/images/10.png",
+    "/images/11.png",
+    "/images/12.png",
+    "/images/13.jpg",
+    "/images/14.png",
+    "/images/15.png",
+    "/images/16.png",
+    "/images/17.png",
+    "/images/18.png",
+    "/images/19.png",
+    "/images/20.png",
+    "/images/21.png",
+    "/images/22.png",
+    "/images/23.png"
   ];
 
   // Triple the list to enable a smooth "infinite" feel
@@ -84,7 +97,7 @@ const ClientsSection = () => {
                 <img
                   src={src}
                   alt={`Client Logo ${index + 1}`}
-                  className="h-10 md:h-12 w-auto object-contain hover:scale-105 transition-transform"
+                  className="h-16 md:h-20 w-auto object-contain hover:scale-105 transition-transform"
                 />
               </div>
             ))}

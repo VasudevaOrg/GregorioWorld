@@ -10,22 +10,22 @@ const FeatureCards = () => {
     },
     {
       title: 'Live Events',
-      image: '/images/home3.jpeg',
+      image: '/images/home2.jpg',
       link: '/events'
     },
     {
       title: 'Online Journey',
-      image: '/images/home2.jpg',
+      image: '/images/home3.jpeg',
       link: '/online-journey'
     }
   ];
 
   return (
-    <section className="py-20 bg-[#fffbf7]">
+    <section className="py-20 bg-[#E8E7E5]">
       <div className="container mx-auto px-4 max-w-[1400px]">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-[32px] md:text-[42px] font-bold tracking-[1px] uppercase mb-4 text-[#1a1a1a]">
+          <h2 className="text-[32px] md:text-[42px] font-bold tracking-[1px] uppercase mb-4 text-[#1a1a1a] font-equip">
             FROM ARCHITECT TO LIFE ARCHITECT
           </h2>
           <p className="text-[20px] md:text-[24px] font-light text-[#333]">
@@ -38,7 +38,7 @@ const FeatureCards = () => {
           {cards.map((card, index) => (
             <div key={index} className="flex flex-col items-center group">
               {/* Rounded Image Container */}
-              <div className="w-full aspect-square overflow-hidden rounded-[40px] mb-8 shadow-sm">
+              <div className="w-full aspect-[3/4] overflow-hidden rounded-[40px] mb-8 shadow-sm">
                 <img
                   src={card.image}
                   alt={card.title}

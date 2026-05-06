@@ -11,7 +11,7 @@ const PrivacyPage = () => {
       <div className="container mx-auto px-6 md:px-20 max-w-[1000px]">
         <h1 className="text-[42px] font-bold tracking-[2px] uppercase mb-12 text-[#1a1a1a]">Privacy Policy</h1>
         <p className="text-[13px] text-gray-500 mb-8 tracking-widest uppercase">– Art. 13 and 14 GDPR 679/2016 Compliant –</p>
-        
+
         <div className="space-y-12 text-[#333] leading-relaxed text-[15px]">
           <section>
             <h2 className="text-[24px] font-bold uppercase mb-4 text-[#1a1a1a]">PREMISES</h2>
@@ -81,10 +81,10 @@ const PrivacyPage = () => {
           <section className="bg-gray-50 p-8 border border-black/5">
             <h2 className="text-[24px] font-bold uppercase mb-4 text-[#1a1a1a]">ROLES AND RESPONSIBILITIES PRIVACY</h2>
             <p>Your data are processed by <strong>Gregorio</strong> as Data Controller.</p>
-            <div className="mt-4 space-y-1">
+            {/* <div className="mt-4 space-y-1">
               <p><strong>Email:</strong> <a href="mailto:hi@breathofone.com" className="font-bold underline">hi@breathofone.com</a></p>
               <p><strong>Phone:</strong> +39 349 412 5430</p>
-            </div>
+            </div> */}
           </section>
 
           <section>
@@ -118,7 +118,7 @@ const PrivacyPage = () => {
               If you want to assert the right to be forgotten with reference to your personal data that may be contained in the articles published on the site, you can refer to the same Data Controller.
             </p>
           </section>
-          
+
           <div className="pt-10 text-[12px] text-gray-400 border-t border-black/5">
             Last updated: May 2026 • © GREGORIO
           </div>

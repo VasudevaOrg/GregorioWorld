@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #f7f6f2;
+  --color-bg-primary: #E8E7E5;
   --color-accent-blue: #7dc6db;
   --color-text-main: #1a1a1a;
 
   --font-sans: var(--font-jost), system-ui, -apple-system, sans-serif;
   --font-serif: var(--font-jost), Georgia, serif;
+  --font-equip: var(--font-equip), sans-serif;
 
   --breakpoint-xs: 480px;
   --breakpoint-sm: 640px;
@@ -39,7 +40,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f7f6f2;
+  background: #E8E7E5;
 }
 
 ::-webkit-scrollbar-thumb {

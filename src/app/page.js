@@ -2,6 +2,7 @@ import HomeHero from '@/components/HomeHero';
 import ClientsSection from '@/components/ClientsSection';
 import FeatureCards from '@/components/FeatureCards';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
+import VideoCarousel from '@/components/VideoCarousel';
 import FoundersSection from '@/components/FoundersSection';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <ClientsSection />
       <FeatureCards />
       <TestimonialsCarousel />
+      <VideoCarousel />
       <FoundersSection />
     </main>
   );

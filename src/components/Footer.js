@@ -44,37 +44,14 @@ const Footer = () => {
 
   return (
     <footer className="">
-      {/* Follow Us Section - White background, no border */}
-      <div className="py-10 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold tracking-[2px] uppercase flex items-center justify-center gap-4">
-            FOLLOW US ON
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </h2>
-        </div>
-      </div>
-
-      <div className="py-16 bg-[#fffbf7]">
+      <div className="py-16 bg-[#E8E7E5]">
         <div className="container mx-auto px-4 md:px-20">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12">
             {/* Left Section */}
             <div className="flex flex-col gap-8">
               {/* Connect with us */}
               <div>
-                <h4 className="font-bold text-[15px] mb-4 text-[#1a1a1a]">Connect with us</h4>
+                <h4 className="font-bold text-[15px] mb-4 text-[#1a1a1a]">Connect with me</h4>
                 <div className="flex gap-4 text-[#1a1a1a]">
                   <a href="https://www.instagram.com/gregorio.live/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -89,10 +66,10 @@ const Footer = () => {
               </div>
 
               {/* Photography Credits */}
-              <div className="text-[13px] text-gray-700 leading-relaxed">
+              {/* <div className="text-[13px] text-gray-700 leading-relaxed">
                 <p>Photography by:</p>
                 <p>Julian Tse - Chris Agafi - Houseoftramp</p>
-              </div>
+              </div> */}
 
               {/* Policy Links */}
               <div className="flex flex-col gap-2 pt-2">
@@ -133,7 +110,7 @@ const Footer = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="flex items-center border-b border-black/20 pb-2 focus-within:border-black transition-colors">
                   <input
                     type="email"

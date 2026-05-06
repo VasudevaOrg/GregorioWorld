@@ -3,10 +3,16 @@ import React from 'react';
 
 const FoundersSection = () => {
   return (
-    <section className="bg-[#fffbf7] overflow-hidden">
+    <section className="bg-[#E8E7E5] overflow-hidden">
+      {/* Mobile Header - Visible only on small screens */}
+      <div className="lg:hidden px-8 pt-12 text-center sm:text-left">
+        <h2 className="text-[18px] font-bold tracking-[3px] uppercase mb-4 text-[#1a1a1a]">MEET</h2>
+        <h3 className="text-[32px] font-bold tracking-[1px] uppercase text-[#1a1a1a] leading-tight mb-8">GREGORIO AVANZINI</h3>
+      </div>
+
       <div className="flex flex-col lg:flex-row">
         {/* Left Side - Full Bleed Image */}
-        <div className="w-full lg:w-1/2 relative min-h-[500px] lg:min-h-[800px]">
+        <div className="w-full lg:w-1/2 relative min-h-[400px] sm:min-h-[500px] lg:min-h-[800px]">
           <img
             src="/images/founder.jpg"
             alt="Founders"
@@ -18,12 +24,15 @@ const FoundersSection = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-full lg:w-1/2 flex items-center py-20 px-8 md:px-16 lg:px-24">
+        <div className="w-full lg:w-1/2 flex items-center py-12 lg:py-20 px-8 md:px-16 lg:px-24">
           <div className="max-w-xl">
-            <h2 className="text-[18px] font-bold tracking-[3px] uppercase mb-12 text-[#1a1a1a]">MEET Gregorio</h2>
+            {/* Desktop Header - Hidden on mobile */}
+            <div className="hidden lg:block">
+              <h2 className="text-[18px] font-bold tracking-[3px] uppercase mb-8 text-[#1a1a1a]">MEET</h2>
+              <h3 className="text-[36px] md:text-[42px] font-bold tracking-[1px] uppercase text-[#1a1a1a] leading-tight mb-8">GREGORIO AVANZINI</h3>
+            </div>
 
-            <div className="space-y-8">
-              <h3 className="text-[36px] md:text-[42px] font-bold tracking-[1px] uppercase text-[#1a1a1a] leading-tight">GREGORIO AVANZINI</h3>
+            <div className="space-y-6 lg:space-y-8">
               <p className="text-[15px] md:text-[17px] leading-relaxed text-[#333]">
                 Gregorio is a <strong>Fulbright Scholar</strong>, a <strong>spiritual activator</strong>, a <strong>transformational coach</strong>, and the <strong>founder</strong> of the <strong>Breath of One</strong>. He explored <strong>67 countries</strong>, and attended over <strong>50 retreats</strong>, <strong>often teaching, always learning</strong>. He <strong>spoke on stages</strong> all around the world, bringing the <strong>Breath of One</strong> to over <strong>6,500 people</strong>. After receiving his <strong>Masters of Architecture</strong> from the <strong>University of Michigan</strong>, where he also assisted in <strong>teaching</strong>, he paused his academic career to <strong>follow his heart</strong> and <strong>embrace a new life</strong>. Trusting his intuition, he took a <strong>leap of faith</strong> and created the <strong>life of his wildest dreams</strong>.
               </p>

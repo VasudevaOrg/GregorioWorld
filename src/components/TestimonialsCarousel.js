@@ -6,130 +6,102 @@ const TestimonialsCarousel = () => {
 
   const testimonials = [
     {
-      name: 'David Block',
-      role: 'Composer/Producer - The Human Experience - Gone Gone Beyond',
-      highlight: 'An experience of Union, liberation, power, and surrender.',
-      quote: 'One of the most magical journeys of your life.',
-      image: '/images/david-block-testimonial-op.jpg'
+      name: 'Ronny Turiaf',
+      role: 'NBA Champion | former LA Lakers Player',
+      highlight: '‘Gregorio Avanzini is a warrior of light.',
+      quote: 'I have no doubt he will help humanity going forward, in an amazing matter, by empowering others to reconnect to their hearts and souls. My life changed for the better by crossing paths with him.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/ronny-turiaf_blue.jpg'
     },
     {
-      name: 'Jacqueline Matos',
-      role: 'Conference Planner | Project Manager',
-      highlight: 'BYF helped me heal physically, spiritually and emotionally.',
-      quote: 'It’s priceless!',
-      image: '/images/jaqueline-matos-op.jpg'
+      name: 'Claire Fermont Langlais',
+      role: 'VP - Aerin Estée Lauder | former Head of Innovation - Calvin Klein Fragrances',
+      highlight: '‘Andrea is this shining star that brings purpose and intention to the next level.',
+      quote: 'She found the courage and braved fear, overcoming darkness to build her light. Thank you for your inspiration and teachings. I follow your path and learn from it too.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/claire-fermont.jpg'
     },
     {
-      name: 'Mario Almondo',
-      role: 'GM of Performance Brembo Former COO Industrial Director SVP Ferrari',
-      highlight: 'Driven by professionals like Gregorio and Andrea, you can reach a new level of energy.',
-      quote: 'Good food for the soul.',
-      image: '/images/licensed-image-op.jpg'
-    },
-    // {
-    //   name: 'Jennie Tolfa',
-    //   role: 'Project Architect - Adrian Smith + Gordon Gill',
-    //   highlight: 'As a beginner, I highly recommend the course.',
-    //   quote: 'It calmed my mind, had better sleep, and reached a state of bliss.',
-    //   image: '/images/jenny-tolfa-op.jpg'
-    // },
-    {
-      name: 'Nadav Wilf',
-      role: 'Founder and CEO Head Alignment Coach Former Chief Possibilities Officer HeroX',
-      highlight: 'I don’t say this lightly, it changed my life forever.',
-      quote: 'Will take you to new heights.',
-      image: '/images/nadav-wilf-testimonial-op.jpg'
+      name: 'Jeffrey Perlman',
+      role: 'CSO - Mindvalley | former Global CMO - Zumba',
+      highlight: '‘Gregorio will guide you through the fear and into the truth.',
+      quote: 'I have come to realize that we are here to learn how to love, period. For those of us that have the courage to truly commit to this mandate, choose Gregorio as your coach.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/jeffrey-perlam.jpg'
     },
     {
       name: 'Jess Lively',
       role: 'Founder - The Lively Show',
-      highlight: 'An incredible experience unlike anything I’ve ever tried.',
-      quote: 'Powerful way to blow past constraints into greater awareness.',
-      image: '/images/jess-lively-testimonial-op.jpg'
-    },
-    {
-      name: 'Tom Chi',
-      role: 'Founding Partner - At One Ventures | former Head of Experience - Google X',
-      highlight: 'Gregorio leads a large group with a mixture of confidence, care, and joy.',
-      quote: 'A skillful practitioner and guide.',
-      image: '/images/tom-chi-testimonial.jpg'
-    },
-    {
-      name: 'Marianne Wagner',
-      role: 'Certified Coach and Trainer',
-      highlight: 'Absolutely mind-blowing.',
-      quote: 'Helped me in gaining more self-confidence to master my joy.',
-      image: '/images/marianne-wagner.jpg'
-    },
-    {
-      name: 'Andrea Aicardi',
-      role: 'VP of Growth @ Neosensory Inc. MIT Graduate',
-      highlight: 'Will unlock your hidden energy.',
-      quote: 'A mind-bending journey that will inspire even the most skeptical audiences.',
-      image: '/images/andrea-aicardi-testimonial-op.jpg'
-    },
-    {
-      name: 'Felizia Baze',
-      role: 'Violinist',
-      highlight: 'BYF helped me to release stuck emotions,',
-      quote: 'feel so much lighter and happier.',
-      image: '/images/Copy-of-felizia-baze-op.jpg'
-    },
-    {
-      name: 'David Langer',
-      role: 'Founder @ Zesty Founding Partner @ Lionheart Ventures Oxford Graduate',
-      highlight: 'The most powerful breathwork experience I’ve had.',
-      quote: 'Sure to bring you more clarity and open your heart.',
-      image: '/images/david-langer-testimonial-op.jpg'
-    },
-    {
-      name: 'Arancha Muelas',
-      role: 'Director, Brand & Content Strategy @ MadBlue Summit Former Director Global Brand Strategy @ Vistaprint',
-      highlight: 'I witnessed the transformation of an entire group.',
-      quote: 'A sense of connection I never experienced before.',
-      image: '/images/Copy-of-arancha-op.jpg'
-    },
-    {
-      name: 'Frederik Talloen',
-      role: 'Best Selling Author Founder @ Freedom Mastery CEO @ Property Cashflow Experts LLC',
-      highlight: 'I had one of the craziest experiences of my life.',
-      quote: 'I experienced the oneness I had just read about.',
-      image: '/images/fredrick.jpg'
-    },
-    {
-      name: 'Helena Wasserman',
-      role: 'Impact Investor TEDx Speaker Forbes 30 under 30',
-      highlight: 'Left me feeling uplifted I had one of the craziest experiences of my life.',
-      quote: 'I experienced the oneness I had just read about.',
-      image: '/images/Copy-of-helena-op.jpg'
-    },
-    {
-      name: 'Julian Tse',
-      role: 'Speaker & Moderator @ Harvard Project for Asian and International Relationships Photographer',
-      highlight: 'Left me feeling uplifted and renewed.',
-      quote: 'Andrea and Gregorio are wonderful human beings with positive energy.',
-      image: '/images/julian-tse-op.jpg'
-    },
-    {
-      name: 'Simon Nicolas Pelland',
-      role: 'Kinesiologist Personal Trainer',
-      highlight: 'Truly life-changing.',
-      quote: 'I am forever grateful for the impact you had on my life.',
-      image: '/images/simon.jpg'
+      highlight: '‘An incredible experience, unlike anything I’ve ever tried.',
+      quote: 'It was a deep, intense, and a powerful way to blow past the constraints of the mind into greater awareness.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/jess-lively-testimonial.jpg'
     },
     {
       name: 'David Block',
       role: 'Composer/Producer - The Human Experience - Gone Gone Beyond',
-      highlight: 'An experience of Union, liberation, power, and surrender.',
-      quote: 'One of the most magical journeys of your life.',
-      image: '/images/david-block-testimonial-op.jpg'
+      highlight: '‘An experience of union, liberation, power, and surrender.',
+      quote: 'Gregorio will guide you on one of the most magical journeys of your life.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/david-block-testimonial.jpg'
     },
     {
-      name: 'Jacqueline Matos',
-      role: 'Conference Planner | Project Manager',
-      highlight: 'BYF helped me heal physically, spiritually and emotionally.',
-      quote: 'It’s priceless!',
-      image: '/images/jaqueline-matos-op.jpg'
+      name: 'Mark Lawrence',
+      role: 'Founder and CEO - SpotHero',
+      highlight: '‘Coaching with Gregorio has brought new heights to my life.',
+      quote: 'He guides from the heart a profound way of thinking that can only be described as "Gregorio". He exudes warm energy that allows you to open up to find your inner truth.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/mark-lawrence.jpg'
+    },
+    // {
+    //   name: 'Anna Vorrias',
+    //   role: 'CMO - Ethique | former VP - Fresh LVMH',
+    //   highlight: '‘Andrea works from the heart and sees limitless possibilities.',
+    //   quote: 'She has the courage to do the work and bring those learning to everyone she touches. I feel lucky to be inspired and lifted by her. I\'m always looking forward to experiencing what she does next.’',
+    //   image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/annavorrias.jpeg'
+    // },
+    {
+      name: 'Nadav Wilf',
+      role: 'Founder and CEO - Head Alignment Coach | former Chief Possibilities Officer - HeroX',
+      highlight: '‘I don’t say this lightly, breathwork with Gregorio changed my life forever.',
+      quote: 'I saw that there’s more than just our bodies and that I could go there anytime through meditation. Gregorio is a pure-hearted masterful facilitator that will take you to new heights.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/nadav-wilf-testimonial.jpg'
+    },
+    {
+      name: 'Mario Almondo',
+      role: 'General Manager of Performance Division - Brembo S.p.A | former COO Industrial Director SVP - Ferrari S.p.A',
+      highlight: '‘Driven by professionals like Gregorio and Andrea, you’ll be part of a wide and energetic experience.',
+      quote: 'Unsuspected intimate and refreshing stream of emotion. Good food for the soul.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/bcNMacmQQc6zMq5RFP9f_mario_brembo-modified.png'
+    },
+    {
+      name: 'Helena Wasserman Erikson',
+      role: 'Impact Investor | TEDx Speaker | Forbes 30 under 30',
+      highlight: '‘I had one of the craziest experiences of my life.',
+      quote: 'I experienced the oneness I had just read about and felt deeply connected with everyone in the world.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/helena.jpg'
+    },
+    {
+      name: 'Andrea Aicaradi',
+      role: 'VP of Growth - Neosensory Inc. | MIT Graduate',
+      highlight: '‘A transformational experience that will unlock your hidden energy.',
+      quote: 'Unlike many ‘holistic’ practices, it’s rooted in science. A mind-bending journey, inspiring even the most skeptical.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/andrea-aicardi-testimonial.jpg'
+    },
+    {
+      name: 'Tom Chi',
+      role: 'Founding Partner - At One Ventures | former Head of Experience - Google X',
+      highlight: '‘Gregorio led a large group into a breathing exercise with a mixture of confidence, care, and joy.',
+      quote: 'He is dedicated to being a skillful practitioner and guide.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/tom-chi-testimonial.png'
+    },
+    // {
+    //   name: 'Jennie Tolfa',
+    //   role: 'Project Architect - Adrian Smith + Gordon Gill',
+    //   highlight: '‘As a beginner into meditation/breathwork, I highly recommend Breath your Freedom.',
+    //   quote: 'I noticed the impact on different aspects from calming my mind to reaching a state of bliss. This is a truly unique, fun, community-based program accessible to all levels.’',
+    //   image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/jenny-tolfa.jpg'
+    // },
+    {
+      name: 'Andy Kaul',
+      role: 'Manager - Microsoft Consulting | former Director SAM - Microsoft',
+      highlight: '‘I highly recommend coaching with Gregorio!',
+      quote: 'He unlocked new doors and advanced me tremendously. Embraced by a bubble of trust I opened up quickly and effortlessly working through tough questions finding surprisingly simple truths and new approaches that I pursued. A wonderful and enriching experience.’',
+      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg'
     }
   ];
 
@@ -230,7 +202,7 @@ const TestimonialsCarousel = () => {
 
         {/* Light Blue Pill Button */}
         <div className="flex justify-center mt-12">
-          <a href="/testimonials" className="px-10 py-3 border border-[#7dc6db] text-[#7dc6db] rounded-full text-[11px] font-bold tracking-[2px] uppercase hover:bg-[#7dc6db] hover:text-white transition-all duration-300">
+          <a href="/testimonials" className="px-10 py-3 bg-[#7dc6db] text-white border border-[#7dc6db] rounded-full text-[11px] font-bold tracking-[2px] uppercase hover:bg-white hover:text-[#7dc6db] transition-all duration-300">
             ALL TESTIMONIALS
           </a>
         </div>

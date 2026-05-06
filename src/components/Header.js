@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`relative z-[1000] transition-all duration-300 border-b border-gray-200/50 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm h-[70px]' : 'bg-white h-[90px]'
+      className={`sticky top-0 z-[1000] transition-all duration-300 border-b border-gray-200/50 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm h-[70px]' : 'bg-white h-[90px]'
         } flex items-center`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between w-full max-w-[1440px]">
