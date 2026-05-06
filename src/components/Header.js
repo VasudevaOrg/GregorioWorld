@@ -18,7 +18,7 @@ const Header = () => {
     { name: 'MENTORING', href: '/mentoring' },
     { name: 'EVENTS', href: '/events' },
     { name: 'ONLINE', href: '/online' },
-    { name: 'ABOUT', href: '/about' },
+    { name: 'ABOUT', href: '/#founders' },
     { name: 'TESTIMONIALS', href: '/testimonials' },
   ];
 
@@ -39,7 +39,6 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Center: Navigation Options */}
         <div className="hidden lg:flex flex-1 justify-center">
           <nav>
             <ul className="flex gap-8 xl:gap-10 items-center">

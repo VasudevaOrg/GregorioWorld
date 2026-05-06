@@ -16,7 +16,7 @@ const FeatureCards = () => {
     {
       title: 'Online Journey',
       image: '/images/home3.jpeg',
-      link: '/online-journey'
+      link: '/online'
     }
   ];
 
@@ -25,7 +25,7 @@ const FeatureCards = () => {
       <div className="container mx-auto px-4 max-w-[1400px]">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-[32px] md:text-[42px] font-bold tracking-[1px] uppercase mb-4 text-[#1a1a1a] font-equip">
+          <h2 className="text-[32px] md:text-[42px] font-normal tracking-[-0.02em] uppercase mb-4 text-[#1a1a1a]">
             FROM ARCHITECT TO LIFE ARCHITECT
           </h2>
           <p className="text-[20px] md:text-[24px] font-light text-[#333]">

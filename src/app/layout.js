@@ -10,10 +10,7 @@ const jost = Jost({
   variable: '--font-jost',
 });
 
-const equipExtended = localFont({
-  src: '../../public/fonts/EquipExtended-Bold.ttf',
-  variable: '--font-equip',
-});
+
 
 export const metadata = {
   title: 'Gregorio World | Professional Coaching & Transformation',
@@ -22,8 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${jost.variable} ${equipExtended.variable} antialiased`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${jost.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

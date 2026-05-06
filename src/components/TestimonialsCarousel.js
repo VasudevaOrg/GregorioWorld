@@ -12,13 +12,13 @@ const TestimonialsCarousel = () => {
       quote: 'I have no doubt he will help humanity going forward, in an amazing matter, by empowering others to reconnect to their hearts and souls. My life changed for the better by crossing paths with him.’',
       image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/ronny-turiaf_blue.jpg'
     },
-    {
-      name: 'Claire Fermont Langlais',
-      role: 'VP - Aerin Estée Lauder | former Head of Innovation - Calvin Klein Fragrances',
-      highlight: '‘Andrea is this shining star that brings purpose and intention to the next level.',
-      quote: 'She found the courage and braved fear, overcoming darkness to build her light. Thank you for your inspiration and teachings. I follow your path and learn from it too.’',
-      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/claire-fermont.jpg'
-    },
+    // {
+    //   name: 'Claire Fermont Langlais',
+    //   role: 'VP - Aerin Estée Lauder | former Head of Innovation - Calvin Klein Fragrances',
+    //   highlight: '‘Andrea is this shining star that brings purpose and intention to the next level.',
+    //   quote: 'She found the courage and braved fear, overcoming darkness to build her light. Thank you for your inspiration and teachings. I follow your path and learn from it too.’',
+    //   image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/claire-fermont.jpg'
+    // },
     {
       name: 'Jeffrey Perlman',
       role: 'CSO - Mindvalley | former Global CMO - Zumba',
@@ -141,7 +141,7 @@ const TestimonialsCarousel = () => {
   }, []);
 
   return (
-    <section className="py-10 bg-white">
+    <section className="pt-10 pb-0 bg-white">
       <div className="container mx-auto px-4 max-w-[1600px]">
         <h2 className="text-center text-[18px] font-bold tracking-[2px] uppercase mb-8 text-[#1a1a1a]">TESTIMONIALS</h2>
 
@@ -158,20 +158,20 @@ const TestimonialsCarousel = () => {
 
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide w-full gap-16 md:gap-20 scroll-smooth"
+            className="flex overflow-x-auto scrollbar-hide w-full gap-16 md:gap-20 scroll-smooth snap-x snap-mandatory"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {displayTestimonials.map((t, index) => (
               <div
                 key={index}
-                className="testimonial-item flex-shrink-0 w-full md:w-[calc(50%-40px)] flex flex-row items-start gap-8 text-left"
+                className="testimonial-item flex-shrink-0 w-full md:w-[calc(50%-40px)] flex flex-row items-start gap-8 text-left snap-center"
               >
                 {/* Image on the left - No grayscale/hover effect */}
                 <div className="flex-shrink-0">
                   <img
                     src={t.image}
                     alt={t.name}
-                    className="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover shadow-sm"
+                    className="w-12 h-12 md:w-20 md:h-20 rounded-full object-cover shadow-sm"
                   />
                 </div>
 
@@ -200,12 +200,6 @@ const TestimonialsCarousel = () => {
           </button>
         </div>
 
-        {/* Light Blue Pill Button */}
-        <div className="flex justify-center mt-12">
-          <a href="/testimonials" className="px-10 py-3 bg-[#7dc6db] text-white border border-[#7dc6db] rounded-full text-[11px] font-bold tracking-[2px] uppercase hover:bg-white hover:text-[#7dc6db] transition-all duration-300">
-            ALL TESTIMONIALS
-          </a>
-        </div>
       </div>
     </section>
   );

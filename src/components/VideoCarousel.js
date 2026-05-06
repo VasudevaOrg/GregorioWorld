@@ -10,11 +10,11 @@ const VideoCarousel = () => {
     { id: 'XFb5KxD34oc', title: 'Elisa Rossi', thumb: '/images/elisa-rossi.jpg' },
     { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
     { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' },
-    { id: 'Ppu74brp4Kk', title: 'Dina', thumb: '/images/dina.jpg' },
+    //{ id: 'Ppu74brp4Kk', title: 'Dina', thumb: '/images/dina.jpg' },
     { id: 'B14ikRKEcy0', title: 'Logan Sullivan', thumb: '/images/logan-sullivan.jpg' },
     { id: 'QKk5Pi01DxM', title: 'Anish', thumb: '/images/anish.jpg' },
-    { id: 'oy_qGUIuG24', title: 'Marianne Coaching', thumb: '/images/marianne-coaching.jpg' },
-    { id: 'fJ8Vd8ElKnA', title: 'June', thumb: '/images/june.jpg' },
+    //{ id: 'oy_qGUIuG24', title: 'Marianne Coaching', thumb: '/images/marianne-coaching.jpg' },
+    //{ id: 'fJ8Vd8ElKnA', title: 'June', thumb: '/images/june.jpg' },
     { id: '9d-MT_86M-w', title: 'Gigi', thumb: '/images/GIGI.jpg' },
   ];
 
@@ -77,7 +77,7 @@ const VideoCarousel = () => {
   };
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="pt-0 pb-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4 max-w-[1600px]">
         <div className="relative flex items-center group px-6 md:px-12">
           {/* Arrow Buttons */}
@@ -138,6 +138,13 @@ const VideoCarousel = () => {
               aria-label={`Go to slide ${i + 1}`}
             />
           ))}
+        </div>
+
+        {/* Light Blue Pill Button */}
+        <div className="flex justify-center mt-12">
+          <a href="/testimonials" className="px-10 py-3 bg-[#7dc6db] text-white border border-[#7dc6db] rounded-full text-[11px] font-bold tracking-[2px] uppercase hover:bg-white hover:text-[#7dc6db] transition-all duration-300">
+            ALL TESTIMONIALS
+          </a>
         </div>
       </div>
 

@@ -59,8 +59,14 @@ const Footer = () => {
                   <a href="https://www.facebook.com/gregorio.avanzini/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                   </a>
-                  <a href="https://www.linkedin.com/in/gregorio-avanzini-a1686315?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2-2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <a href="https://www.linkedin.com/in/gregorio-avanzini-a1686315/" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity" title="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="4" ry="4"></rect>
+                      <path d="M8 11v5"></path>
+                      <path d="M8 8v.01"></path>
+                      <path d="M12 16v-5"></path>
+                      <path d="M16 16v-3a2 2 0 0 0-4 0"></path>
+                    </svg>
                   </a>
                 </div>
               </div>

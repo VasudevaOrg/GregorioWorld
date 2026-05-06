@@ -3,7 +3,7 @@ import React from 'react';
 
 const FoundersSection = () => {
   return (
-    <section className="bg-[#E8E7E5] overflow-hidden">
+    <section id="founders" className="bg-[#E8E7E5] overflow-hidden">
       {/* Mobile Header - Visible only on small screens */}
       <div className="lg:hidden px-8 pt-12 text-center sm:text-left">
         <h2 className="text-[18px] font-bold tracking-[3px] uppercase mb-4 text-[#1a1a1a]">MEET</h2>
