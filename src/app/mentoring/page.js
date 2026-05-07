@@ -159,8 +159,7 @@ export default function MentoringPage() {
               className="text-[34px] sm:text-[42px] md:text-[60px] lg:text-[72px] xl:text-[90px] font-normal text-black leading-[0.9] mb-4 md:mb-6 uppercase tracking-[-1px] sm:tracking-[-2px] md:tracking-[-4px]"
             >
               I BRING <br />
-              PEOPLE AND <br />
-              GROUPS ON <br />
+              PEOPLE ON <br />
               JOURNEYS
             </motion.h1>
 
@@ -211,7 +210,60 @@ export default function MentoringPage() {
         </div>
       </section>
       {/* Section 4: Testimonials */}
-      <TestimonialsCarousel bgColor="bg-[#FBF9F7]" />
+      <TestimonialsCarousel
+        bgColor="bg-[#FBF9F7]"
+        customItems={[
+          {
+            name: 'Andy Kaul',
+            role: 'Manager - Microsoft Consulting I former Director SAM - Microsoft',
+            highlight: '‘Coaching with Gregorio unlocked new doors, and advanced me tremendously.',
+            quote: 'I highly recommend working him! Embraced by a bubble of trust I opened up quickly and effortlessly working through tough questions finding surprisingly simple truths and new approaches that I pursued. A wonderful and enriching experience.’',
+            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg'
+          },
+          {
+            name: 'Anna Vorrias',
+            role: 'CMO - Ethique I former VP - Fresh LVMH',
+            highlight: '‘Andrea works from the heart and sees limitless possibilities.',
+            quote: 'She has the courage to do the work and bring those learning to everyone she touches. I feel lucky to be inspired and lifted by her. I\'m always looking forward to experiencing what she does next.’',
+            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/annavorrias.jpeg'
+          },
+          {
+            name: 'Jeffrey Perlman',
+            role: 'CSO - Mindvalley I former Global CMO - Zumba',
+            highlight: '‘Gregorio will guide you through the fear and into the truth.',
+            quote: 'I have come to realize that we are here to learn how to love, period. For those of us that have the courage to truly commit to this mandate, choose Gregorio as your coach.’',
+            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/jeffrey-perlam.jpg'
+          },
+          {
+            name: 'Claire Fermont Langlais',
+            role: 'VP - Aerin Estée Lauder I former Head of Innovation - Calvin Klein Fragrances',
+            highlight: '‘Andrea is this shining star that brings purpose and intention to the next level.',
+            quote: 'She found the courage and braved fear, overcoming darkness to build her light. Thank you for your inspiration and teachings. I follow your path and learn from it too.’',
+            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/claire-fermont.jpg'
+          },
+          {
+            name: 'Ronny Turiaf',
+            role: 'NBA Champion I former LA Lakers Player',
+            highlight: '‘Gregorio Avanzini is a warrior of light.',
+            quote: 'I have no doubt he will help humanity going forward, in an amazing matter, by empowering others to reconnect to their hearts and souls. My life changed for the better by crossing paths with him.’',
+            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/ronny-turiaf_blue.jpg'
+          },
+          {
+            name: 'Mark Lawrence',
+            role: 'Founder and CEO - SpotHero',
+            highlight: '‘Coaching with Gregorio has brought new heights to my life.',
+            quote: 'He guides from the heart a profound way of thinking that can only be described as "Gregorio". He exudes warm energy that allows you to open up to find your inner truth.’',
+            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/mark-lawrence.jpg'
+          },
+          {
+            name: 'Arancha Muelas',
+            role: 'Director, Brand & Content Strategy - MadBlue Summit | Former Director Global Brand Strategy at Vistaprint',
+            highlight: '‘Gregorio lives in constant flow, projects light to the world and brightens the way for others.',
+            quote: 'He is an extraordinary individual that has conquered one of the most important lessons and secrets of life: live from your heart and never close! His story was an inspiration to find my own path.’',
+            image: '/images/Copy-of-arancha-op.jpg'
+          },
+        ]}
+      />
 
       {/* Testimonials CTA */}
       <div className="flex justify-center pb-20 md:pb-32 bg-[#FBF9F7]">
@@ -373,17 +425,57 @@ export default function MentoringPage() {
       </section>
 
       {/* Section 5: Video Testimonials */}
-      <div className="pt-8 pb-12 md:pb-24">
-      <VideoCarousel 
+      <VideoCarousel
+        title="TESTIMONIALS"
+        bgColor="bg-[#FBF9F7]"
         desktopItems={4}
         items={[
           { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
           { id: 'AJf-fylSIdU', title: 'Anthony Trucks', thumb: '/images/anthony-trucks.jpg' },
           { id: "yPfy3B6ihUA", title: "Cynthia", thumb: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/cynthia.jpg?fit=533%2C300&ssl=1" },
           { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' }
-        ]} 
+        ]}
       />
-      </div>
+
+      {/* Final Cinematic Section - Bookending the page */}
+      <section className="relative h-[80vh] md:h-[90vh] flex items-end justify-center pb-32 md:pb-48">
+        {/* Background Image - Matching the Hero style */}
+        <div className="absolute inset-0 overflow-hidden">
+          <img
+            src="images/COACHING.jpg"
+            alt="Mentoring Journey Final"
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.src = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80';
+            }}
+          />
+          <div className="absolute inset-0 bg-black/10" />
+        </div>
+
+        {/* Centered Text Content */}
+        <div className="relative z-10 text-center px-6 max-w-5xl">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-white text-[24px] sm:text-[34px] md:text-[44px] lg:text-[54px] xl:text-[62px] font-normal leading-[1.2] uppercase tracking-[1px] sm:tracking-[2px]"
+          >
+            READY TO EXPAND AND EVOLVE <br className="hidden sm:block" />
+            BEYOND LIMITS <br className="hidden sm:block" />
+          </motion.h2>
+        </div>
+
+        {/* Overlapping Book a Call Button */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-[100]">
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="px-12 py-5 bg-[#7dc6db] text-white border-2 border-[#7dc6db] rounded-full text-[13px] font-bold tracking-[3px] uppercase hover:bg-white hover:text-[#7dc6db] transition-all duration-300 shadow-[0_10px_30px_rgba(125,198,219,0.4)] whitespace-nowrap"
+          >
+            BOOK A CALL
+          </button>
+        </div>
+      </section>
     </main>
   );
 }

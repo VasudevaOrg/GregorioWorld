@@ -5,18 +5,42 @@ import { motion, useInView as useFramerInView, AnimatePresence } from 'framer-mo
 import emailjs from '@emailjs/browser';
 
 const FreeGiftPopup = ({ isOpen, onClose }) => {
-  const formRef = useRef(null);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: ''
+  });
+  const [status, setStatus] = useState('idle');
 
-  useEffect(() => {
-    if (isOpen && formRef.current) {
-      // Clear previous script if any to prevent duplicates
-      formRef.current.innerHTML = '';
-      const script = document.createElement('script');
-      script.src = 'https://welcome.breatheyourfreedom.com/forms/2148153117/embed.js';
-      script.async = true;
-      formRef.current.appendChild(script);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    const templateParams = {
+      from_name: `${formData.firstName} ${formData.lastName}`,
+      from_email: formData.email,
+      to_email: 'Greg.Avanzini@gmail.com',
+      message: 'Lead from Online Journey Free Gift Popup'
+    };
+
+    try {
+      await emailjs.send(
+        'service_842n4oh',
+        'template_xgq3odb',
+        templateParams,
+        'Kf5gpohi6v10JDohV'
+      );
+      setStatus('success');
+      setTimeout(() => {
+        onClose();
+        setStatus('idle');
+        setFormData({ firstName: '', lastName: '', email: '' });
+      }, 2000);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setStatus('error');
     }
-  }, [isOpen]);
+  };
 
   return (
     <AnimatePresence>
@@ -65,9 +89,45 @@ const FreeGiftPopup = ({ isOpen, onClose }) => {
                 Plus access to our community<br />and exclusive offers.<br />No spam ever, promise.
               </p>
 
-              <div ref={formRef} className="w-full">
-                {/* External form script will load here */}
-              </div>
+              <form onSubmit={handleSubmit} className="w-full space-y-3">
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    placeholder="FIRST NAME"
+                    required
+                    value={formData.firstName}
+                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    className="w-1/2 bg-[#F5F5F5] border-[1.5px] border-black/10 rounded-xl px-4 py-3 text-[14px] font-bold text-black outline-none focus:border-[#FF8B64] transition-all"
+                  />
+                  <input
+                    type="text"
+                    placeholder="LAST NAME"
+                    required
+                    value={formData.lastName}
+                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                    className="w-1/2 bg-[#F5F5F5] border-[1.5px] border-black/10 rounded-xl px-4 py-3 text-[14px] font-bold text-black outline-none focus:border-[#FF8B64] transition-all"
+                  />
+                </div>
+                <input
+                  type="email"
+                  placeholder="EMAIL ADDRESS"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full bg-[#F5F5F5] border-[1.5px] border-black/10 rounded-xl px-4 py-3 text-[14px] font-bold text-black outline-none focus:border-[#FF8B64] transition-all"
+                />
+                <button
+                  type="submit"
+                  disabled={status === 'loading' || status === 'success'}
+                  className="w-full bg-[#FF8B64] hover:bg-[#ff7a4d] text-black font-black py-4 rounded-full text-[16px] uppercase tracking-widest transition-all border-[2px] border-black shadow-[0_4px_0_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] disabled:opacity-50"
+                >
+                  {status === 'loading' ? 'SENDING...' : status === 'success' ? 'THANK YOU!' : 'GET MY FREE GIFT'}
+                </button>
+              </form>
+
+              {status === 'error' && (
+                <p className="mt-3 text-red-500 font-bold text-[12px]">Oops! Something went wrong.</p>
+              )}
             </div>
           </motion.div>
         </div>

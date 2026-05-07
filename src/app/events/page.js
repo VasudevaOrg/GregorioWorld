@@ -538,11 +538,9 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* Section 7: Video Testimonials (Homepage Style) */}
-      <section className="pt-16 pb-0">
-        <h2 className="text-center text-[18px] font-bold tracking-[2px] uppercase mb-8 text-[#1a1a1a]">TESTIMONIALS</h2>
-      </section>
+      {/* Section 7: Video Testimonials */}
       <VideoCarousel
+        title="TESTIMONIALS"
         desktopItems={4}
         items={[
           { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },

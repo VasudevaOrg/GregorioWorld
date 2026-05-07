@@ -30,8 +30,8 @@ const Header = () => {
     { name: 'MENTORING', href: '/mentoring' },
     { name: 'EVENTS', href: '/events' },
     { name: 'ONLINE', href: '/online' },
-    { name: 'ABOUT', href: '/#founders' },
     { name: 'TESTIMONIALS', href: '/testimonials' },
+    { name: 'ABOUT', href: '/#founders' },
   ];
 
   const headerHeight = isScrolled ? '70px' : '90px';

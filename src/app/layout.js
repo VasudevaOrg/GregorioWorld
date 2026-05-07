@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import TestimonialBadge from '@/components/TestimonialBadge';
 import { Jost } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={`${jost.variable} antialiased`}>
         <Header />
+        <TestimonialBadge />
         {children}
         <Footer />
       </body>

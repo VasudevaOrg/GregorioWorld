@@ -123,7 +123,7 @@ const breathworkVideos = [
   { id: '9d-MT_86M-w', title: 'Gigi', thumb: '/images/GIGI.jpg' },
   { id: 'B14ikRKEcy0', title: 'Logan Sullivan', thumb: '/images/logan-sullivan.jpg' },
   { id: 'fJ8Vd8ElKnA', title: 'June', thumb: '/images/june.jpg' },
-  { id: 'AndreiYJqUOmlU3uk', title: 'Andrei', thumb: '/images/111.jpg' },
+  { id: 'YJqUOmlU3uk', title: 'Andrei', thumb: '/images/111.jpg' },
   { id: '12-gBWJ1Nio', title: 'Talia Serene', thumb: '/images/222.jpg' },
   { id: 'Aql1LRpaqFg', title: 'Julian', thumb: '/images/33.jpg' }
   //{ id: 'oy_qGUIuG24', title: 'Marianne', thumb: '/images/marianne-coaching.jpg' },
@@ -135,6 +135,7 @@ const coachingVideos = [
   //{ id: 'Dina', title: 'Dina', thumb: '/images/dina.jpg' },
   { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' },
   { id: 'QKk5Pi01DxM', title: 'Anish', thumb: '/images/anish.jpg' },
+  { id: 'ePHhBXtS7k0', title: 'Anish', thumb: '/images/ashley.jpg' },
   { id: '7pABKuEbUlI', title: 'Madalina & Chris', thumb: '/images/3333.jpg' }
 ];
 

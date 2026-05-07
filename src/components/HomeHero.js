@@ -21,14 +21,14 @@ const HomeHero = () => {
       </div>
 
       {/* Content Overlay - Bottom-left aligned across all devices */}
-      <div className="absolute inset-0 z-10 flex items-end pb-12 md:pb-20 lg:pb-24">
-        <div className="container mx-auto px-6 md:px-20 max-w-[1600px]">
-          <div className="max-w-[800px] text-[#1a1a1a] text-left">
+      <div className="absolute inset-0 z-10 flex items-end pb-8 md:pb-16 lg:pb-20">
+        <div className="w-full px-6 md:px-12 max-w-[1600px] mx-auto">
+          <div className="max-w-[900px] text-[#1a1a1a] text-left">
             <h1 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-normal tracking-[-0.02em] uppercase leading-[1] mb-6 md:mb-10">
-              <span className="block whitespace-nowrap">THE SKY ISN'T</span>
-              <span className="block whitespace-nowrap">THE LIMIT...</span>
-              <span className="block whitespace-nowrap">IT'S THE</span>
-              <span className="block whitespace-nowrap">BEGINNING.</span>
+              <span className="block">THE SKY ISN'T</span>
+              <span className="block">THE LIMIT...</span>
+              <span className="block">IT'S THE</span>
+              <span className="block">BEGINNING.</span>
             </h1>
             <p className="text-[18px] sm:text-[24px] md:text-[32px] lg:text-[40px] font-light leading-[1.1] text-[#1a1a1a]">
               For the driven ones,<br />
@@ -39,17 +39,6 @@ const HomeHero = () => {
         </div>
       </div>
 
-      {/* Floating Side Button - Compact Size */}
-      <div className="fixed right-0 top-1/2 -translate-y-1/2 z-[1001] hidden lg:block">
-        <button className="bg-[#7dc6db] text-white py-5 px-2 rounded-l-xl shadow-2xl hover:bg-opacity-90 transition-all flex flex-col items-center gap-2">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-          </svg>
-          <span className="text-[10.5px] font-bold tracking-[2px] uppercase" style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
-            TESTIMONIALS
-          </span>
-        </button>
-      </div>
     </section>
   );
 };

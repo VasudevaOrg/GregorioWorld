@@ -1,10 +1,10 @@
 'use client';
 import React, { useRef, useEffect } from 'react';
 
-const TestimonialsCarousel = ({ bgColor = 'bg-white' }) => {
+const TestimonialsCarousel = ({ bgColor = 'bg-white', customItems = null }) => {
   const scrollRef = useRef(null);
 
-  const testimonials = [
+  const defaultTestimonials = [
     {
       name: 'Ronny Turiaf',
       role: 'NBA Champion | former LA Lakers Player',
@@ -104,6 +104,8 @@ const TestimonialsCarousel = ({ bgColor = 'bg-white' }) => {
       image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg'
     }
   ];
+
+  const testimonials = customItems || defaultTestimonials;
 
   // Triple the list for infinite feel
   const displayTestimonials = [...testimonials, ...testimonials, ...testimonials];

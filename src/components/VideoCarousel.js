@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 
-const VideoCarousel = ({ items, desktopItems = 3 }) => {
+const VideoCarousel = ({ items, desktopItems = 3, bgColor = 'bg-white', title = null }) => {
   const scrollRef = useRef(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -13,7 +13,7 @@ const VideoCarousel = ({ items, desktopItems = 3 }) => {
 
   const defaultVideos = [
     { id: 'AJf-fylSIdU', title: 'Anthony Trucks', thumb: '/images/anthony-trucks.jpg' },
-    { id: 'XFb5KxD34oc', title: 'Elisa Rossi', thumb: '/images/elisa-rossi.jpg' },
+    //{ id: 'XFb5KxD34oc', title: 'Elisa Rossi', thumb: '/images/elisa-rossi.jpg' },
     { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
     { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' },
     { id: 'B14ikRKEcy0', title: 'Logan Sullivan', thumb: '/images/logan-sullivan.jpg' },
@@ -82,8 +82,13 @@ const VideoCarousel = ({ items, desktopItems = 3 }) => {
   };
 
   return (
-    <section className="pt-0 pb-16 bg-white overflow-hidden">
+    <section className={`pt-12 pb-16 ${bgColor} overflow-hidden`}>
       <div className="container mx-auto px-4 max-w-[1600px]">
+        {title && (
+          <h2 className="text-center text-[18px] font-bold tracking-[2px] uppercase mb-12 text-[#1a1a1a]">
+            {title}
+          </h2>
+        )}
         <div className="relative flex items-center group px-6 md:px-12">
           {/* Arrow Buttons */}
           <button
