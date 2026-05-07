@@ -16,6 +16,10 @@ const jost = Jost({
 export const metadata = {
   title: 'Gregorio World | Professional Coaching & Transformation',
   description: 'Join Gregorio on a journey of self-discovery and transformation through professional programs and coaching.',
+  icons: {
+    icon: '/images/MainLogo.png',
+    apple: '/images/MainLogo.png',
+  },
 };
 
 export default function RootLayout({ children }) {
