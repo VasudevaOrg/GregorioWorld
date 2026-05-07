@@ -531,7 +531,7 @@ const OnlineJourney = () => {
           <img
             src="/images/Main-picture-min.jpeg"
             alt="MASTER YOUR HAPPINESS"
-            className="w-full h-full object-[75%_center] md:object-center opacity-85 md:opacity-100 transition-opacity duration-700"
+            className="w-full h-full object-cover object-[70%_10%] md:object-[center_10%] opacity-90 md:opacity-100 transition-opacity duration-700"
           />
           <div className="absolute inset-0 bg-white/15 md:bg-transparent z-[1]" />
         </div>

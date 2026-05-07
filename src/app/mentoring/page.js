@@ -220,13 +220,13 @@ export default function MentoringPage() {
             quote: 'I highly recommend working him! Embraced by a bubble of trust I opened up quickly and effortlessly working through tough questions finding surprisingly simple truths and new approaches that I pursued. A wonderful and enriching experience.’',
             image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg'
           },
-          {
-            name: 'Anna Vorrias',
-            role: 'CMO - Ethique I former VP - Fresh LVMH',
-            highlight: '‘Andrea works from the heart and sees limitless possibilities.',
-            quote: 'She has the courage to do the work and bring those learning to everyone she touches. I feel lucky to be inspired and lifted by her. I\'m always looking forward to experiencing what she does next.’',
-            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/annavorrias.jpeg'
-          },
+          // {
+          //   name: 'Anna Vorrias',
+          //   role: 'CMO - Ethique I former VP - Fresh LVMH',
+          //   highlight: '‘Andrea works from the heart and sees limitless possibilities.',
+          //   quote: 'She has the courage to do the work and bring those learning to everyone she touches. I feel lucky to be inspired and lifted by her. I\'m always looking forward to experiencing what she does next.’',
+          //   image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/annavorrias.jpeg'
+          // },
           {
             name: 'Jeffrey Perlman',
             role: 'CSO - Mindvalley I former Global CMO - Zumba',
@@ -234,13 +234,13 @@ export default function MentoringPage() {
             quote: 'I have come to realize that we are here to learn how to love, period. For those of us that have the courage to truly commit to this mandate, choose Gregorio as your coach.’',
             image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/jeffrey-perlam.jpg'
           },
-          {
-            name: 'Claire Fermont Langlais',
-            role: 'VP - Aerin Estée Lauder I former Head of Innovation - Calvin Klein Fragrances',
-            highlight: '‘Andrea is this shining star that brings purpose and intention to the next level.',
-            quote: 'She found the courage and braved fear, overcoming darkness to build her light. Thank you for your inspiration and teachings. I follow your path and learn from it too.’',
-            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/claire-fermont.jpg'
-          },
+          // {
+          //   name: 'Claire Fermont Langlais',
+          //   role: 'VP - Aerin Estée Lauder I former Head of Innovation - Calvin Klein Fragrances',
+          //   highlight: '‘Andrea is this shining star that brings purpose and intention to the next level.',
+          //   quote: 'She found the courage and braved fear, overcoming darkness to build her light. Thank you for your inspiration and teachings. I follow your path and learn from it too.’',
+          //   image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/claire-fermont.jpg'
+          // },
           {
             name: 'Ronny Turiaf',
             role: 'NBA Champion I former LA Lakers Player',
@@ -462,7 +462,7 @@ export default function MentoringPage() {
             className="text-white text-[24px] sm:text-[34px] md:text-[44px] lg:text-[54px] xl:text-[62px] font-normal leading-[1.2] uppercase tracking-[1px] sm:tracking-[2px]"
           >
             READY TO EXPAND AND EVOLVE <br className="hidden sm:block" />
-            BEYOND LIMITS <br className="hidden sm:block" />
+            BEYOND LIMITS? <br className="hidden sm:block" />
           </motion.h2>
         </div>
 
