@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef, useEffect } from 'react';
 
-const TestimonialsCarousel = () => {
+const TestimonialsCarousel = ({ bgColor = 'bg-white' }) => {
   const scrollRef = useRef(null);
 
   const testimonials = [
@@ -141,7 +141,7 @@ const TestimonialsCarousel = () => {
   }, []);
 
   return (
-    <section className="pt-10 pb-0 bg-white">
+    <section className={`pt-10 pb-0 ${bgColor}`}>
       <div className="container mx-auto px-4 max-w-[1600px]">
         <h2 className="text-center text-[18px] font-bold tracking-[2px] uppercase mb-8 text-[#1a1a1a]">TESTIMONIALS</h2>
 
@@ -164,7 +164,7 @@ const TestimonialsCarousel = () => {
             {displayTestimonials.map((t, index) => (
               <div
                 key={index}
-                className="testimonial-item flex-shrink-0 w-full md:w-[calc(50%-40px)] flex flex-row items-start gap-8 text-left snap-center"
+                className="testimonial-item flex-shrink-0 w-full lg:w-[calc(50%-40px)] flex flex-row items-start gap-8 text-left snap-start"
               >
                 {/* Image on the left - No grayscale/hover effect */}
                 <div className="flex-shrink-0">

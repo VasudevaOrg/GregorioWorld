@@ -124,9 +124,9 @@ const breathworkVideos = [
   { id: 'B14ikRKEcy0', title: 'Logan Sullivan', thumb: '/images/logan-sullivan.jpg' },
   //{ id: 'oy_qGUIuG24', title: 'Marianne', thumb: '/images/marianne-coaching.jpg' },
   { id: 'fJ8Vd8ElKnA', title: 'June', thumb: '/images/june.jpg' },
-  { id: 'Andrei', title: 'Andrei', thumb: '/images/111.jpg' },
-  { id: 'Talia Serene', title: 'Talia Serene', thumb: '/images/222.jpg' },
-  { id: 'Julian', title: 'Julian', thumb: '/images/33.jpg' }
+  { id: 'AndreiYJqUOmlU3uk', title: 'Andrei', thumb: '/images/111.jpg' },
+  { id: '12-gBWJ1Nio', title: 'Talia Serene', thumb: '/images/222.jpg' },
+  { id: 'Aql1LRpaqFg', title: 'Julian', thumb: '/images/33.jpg' }
 ];
 
 const coachingVideos = [
@@ -134,15 +134,15 @@ const coachingVideos = [
   { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
   //{ id: 'Dina', title: 'Dina', thumb: '/images/dina.jpg' },
   { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' },
-  { id: 'Anish', title: 'Anish', thumb: '/images/anish.jpg' },
-  { id: 'Madalina and Chris', title: 'Madalina & Chris', thumb: '/images/3333.jpg' }
+  { id: 'QKk5Pi01DxM', title: 'Anish', thumb: '/images/anish.jpg' },
+  { id: '7pABKuEbUlI', title: 'Madalina & Chris', thumb: '/images/3333.jpg' }
 ];
 
 const eventVideos = [
-  { id: 'Andrea & Frank', title: 'Andrea & Frank', thumb: '/images/11111.jpg' },
-  { id: 'Somi', title: 'Somi', thumb: '/images/22222.png' },
-  { id: 'Cynthia', title: 'Cynthia', thumb: '/images/33333.jpg' },
-  { id: 'Video 4', title: 'Video 4', thumb: '/images/44444.jpg' }
+  { id: '_0h0Xp8X_q4', title: 'Andrea & Frank', thumb: '/images/11111.jpg' },
+  { id: 'WDweq_q8UJY', title: 'Somi', thumb: '/images/22222.png' },
+  { id: 'yPfy3B6ihUA', title: 'Cynthia', thumb: '/images/33333.jpg' },
+  { id: 'yPfy3B6ihUA', title: 'Video 4', thumb: '/images/44444.jpg' }
 ];
 
 const VideoCarousel = ({ items, onVideoClick }) => {
@@ -195,9 +195,6 @@ const VideoCarousel = ({ items, onVideoClick }) => {
                 <svg width="40" height="40" className="md:w-12 md:h-12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
               </div>
             </div>
-            <div className="absolute bottom-3 left-4 right-4 text-center pointer-events-none">
-              <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white drop-shadow-md">{video.title}</p>
-            </div>
           </div>
         ))}
       </div>
@@ -238,7 +235,7 @@ export default function TestimonialsPage() {
       <section className="relative min-h-[60vh] md:min-h-[100vh] flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url("https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/header-testimonials.jpg?fit=1920%2C1282&ssl=1")' }}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-white text-[32px] sm:text-[40px] md:text-[60px] font-bold uppercase tracking-tighter mt-[100px] md:mt-[190px]">testimonials</h1>
+          <h1 className="text-white text-[32px] sm:text-[40px] md:text-[60px] lg:text-[72px] font-normal uppercase tracking-[-0.02em] leading-[1] mt-[100px] md:mt-[190px]">testimonials</h1>
         </div>
       </section>
 
@@ -258,7 +255,7 @@ export default function TestimonialsPage() {
                   transition={{ delay: index * 0.1 }}
                   className="bg-[#F1F1EE] p-5 md:p-7 flex flex-col rounded-[12px] shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="flex-grow">
+                  <div className={`flex-grow flex flex-col justify-center ${index < 2 ? 'pt-10' : ''}`}>
                     <p className="text-[15px] md:text-[16px] font-normal text-black/80 leading-[1.6] mb-5 text-center font-serif">"{t.text}"</p>
                   </div>
                   <div className="flex items-center justify-center gap-4 mt-auto">

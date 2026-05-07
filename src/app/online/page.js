@@ -4,6 +4,112 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView as useFramerInView, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
+const FreeGiftPopup = ({ isOpen, onClose }) => {
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen && formRef.current) {
+      // Clear previous script if any to prevent duplicates
+      formRef.current.innerHTML = '';
+      const script = document.createElement('script');
+      script.src = 'https://welcome.breatheyourfreedom.com/forms/2148153117/embed.js';
+      script.async = true;
+      formRef.current.appendChild(script);
+    }
+  }, [isOpen]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <div className="fixed top-0 left-0 w-full h-full z-[2000] flex items-center justify-center p-4">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+          />
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0, y: 10 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.9, opacity: 0, y: 10 }}
+            className="relative bg-white rounded-[24px] overflow-hidden max-w-[900px] w-full flex flex-col md:flex-row shadow-2xl border-[1px] border-black/10 max-h-[90vh] overflow-y-auto no-scrollbar z-10"
+          >
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 z-20 text-black/40 hover:text-black transition-colors bg-white/80 rounded-full p-1"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+
+            {/* Left Image */}
+            <div className="hidden md:block w-1/2 relative min-h-[500px]">
+              <img
+                src="https://i0.wp.com/gregorio.world/wp-content/uploads/2024/01/Screenshot-2023-05-14-143149.jpg?fit=660%2C993&ssl=1"
+                alt="Free Gift"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col items-center text-center justify-center bg-white">
+              <img
+                src="images/MainLogo.png"
+                alt="Breathe Your Freedom Logo"
+                className="w-24 md:w-32 mb-6 md:mb-8 object-contain"
+              />
+              <h2 className="text-[22px] md:text-[28px] font-bold text-black uppercase leading-tight mb-4 tracking-tight">
+                GET INSTANT<br />BLISS NOW<br />WITH OUR <br />FREE GIFT!
+              </h2>
+              <p className="text-[14px] md:text-[17px] text-black/80 mb-6 md:mb-8 leading-snug">
+                Plus access to our community<br />and exclusive offers.<br />No spam ever, promise.
+              </p>
+
+              <div ref={formRef} className="w-full">
+                {/* External form script will load here */}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
+  );
+};
+
+const ScrollToTop = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisible = () => {
+      if (window.scrollY > 300) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+    window.addEventListener('scroll', toggleVisible);
+    return () => window.removeEventListener('scroll', toggleVisible);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: visible ? 1 : 0, y: visible ? 0 : 20 }}
+      onClick={scrollToTop}
+      className={`fixed bottom-8 right-8 z-[100] cursor-pointer bg-white border border-black/10 text-black p-4 rounded-full shadow-lg hover:bg-gray-50 transition-all ${visible ? 'pointer-events-auto' : 'pointer-events-none'}`}
+      title="Scroll to Top"
+    >
+      <svg className="w-5 h-5 rotate-180" viewBox="57 35.171 26 16.043">
+        <path fill="currentColor" d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+      </svg>
+    </motion.div>
+  );
+};
+
 const WaitlistModal = ({ isOpen, onClose, selectedPlan }) => {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
@@ -43,7 +149,7 @@ const WaitlistModal = ({ isOpen, onClose, selectedPlan }) => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div className="fixed top-0 left-0 w-full h-full z-[2100] flex items-center justify-center p-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -52,10 +158,10 @@ const WaitlistModal = ({ isOpen, onClose, selectedPlan }) => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
           />
           <motion.div
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+            initial={{ scale: 0.9, opacity: 0, y: 10 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            className="relative bg-white rounded-[32px] p-8 md:p-12 max-w-[500px] w-full shadow-2xl border-[3px] border-black text-center"
+            exit={{ scale: 0.9, opacity: 0, y: 10 }}
+            className="relative bg-white rounded-[24px] md:rounded-[32px] p-6 md:p-12 max-w-[500px] w-full shadow-2xl border-[2px] md:border-[3px] border-black text-center max-h-[90vh] overflow-y-auto no-scrollbar z-10"
           >
             <button
               onClick={onClose}
@@ -64,8 +170,8 @@ const WaitlistModal = ({ isOpen, onClose, selectedPlan }) => {
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
 
-            <h3 className="text-[28px] font-black text-black uppercase tracking-tight mb-2">Join the Waitlist</h3>
-            <p className="text-[16px] text-black/60 mb-8 leading-tight">
+            <h3 className="text-[24px] md:text-[28px] font-black text-black uppercase tracking-tight mb-2">Join the Waitlist</h3>
+            <p className="text-[14px] md:text-[16px] text-black/60 mb-6 md:mb-8 leading-tight">
               You've selected the <span className="font-bold text-black">{selectedPlan}</span>.<br />
               Enter your email below and we'll be in touch!
             </p>
@@ -82,7 +188,7 @@ const WaitlistModal = ({ isOpen, onClose, selectedPlan }) => {
               <button
                 type="submit"
                 disabled={status === 'loading' || status === 'success'}
-                className="w-full bg-[#FF8B64] hover:bg-[#ff7a4d] text-black font-black py-4 rounded-full text-[18px] uppercase tracking-widest transition-all border-[2px] border-black shadow-[0_4px_0_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] disabled:opacity-50 disabled:translate-y-0 disabled:shadow-none"
+                className="w-full bg-[#FF8B64] hover:bg-[#ff7a4d] text-black font-black py-4 rounded-full text-[16px] md:text-[18px] uppercase tracking-widest transition-all border-[2px] border-black shadow-[0_4px_0_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] disabled:opacity-50 disabled:translate-y-0 disabled:shadow-none"
               >
                 {status === 'loading' ? 'SENDING...' : status === 'success' ? 'THANK YOU!' : 'JOIN WAITLIST'}
               </button>
@@ -331,6 +437,16 @@ const OnlineJourney = () => {
     document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    // Trigger popup after 10 seconds
+    const timer = setTimeout(() => {
+      setIsPopupOpen(true);
+    }, 10000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const openWaitlist = (plan) => {
     setSelectedPlan(plan);
     setIsModalOpen(true);
@@ -338,6 +454,11 @@ const OnlineJourney = () => {
 
   return (
     <main className="min-h-screen bg-[#E8E7E5]">
+      <ScrollToTop />
+      <FreeGiftPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
       <WaitlistModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

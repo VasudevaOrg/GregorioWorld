@@ -1,22 +1,27 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 
-const VideoCarousel = () => {
+const VideoCarousel = ({ items, desktopItems = 3 }) => {
   const scrollRef = useRef(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  const videos = [
+  const getWidthClass = () => {
+    if (desktopItems === 4) return 'lg:w-[calc(25%-18px)]';
+    if (desktopItems === 2) return 'lg:w-[calc(50%-12px)]';
+    return 'lg:w-[calc(33.333%-16px)]';
+  };
+
+  const defaultVideos = [
     { id: 'AJf-fylSIdU', title: 'Anthony Trucks', thumb: '/images/anthony-trucks.jpg' },
     { id: 'XFb5KxD34oc', title: 'Elisa Rossi', thumb: '/images/elisa-rossi.jpg' },
     { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
     { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' },
-    //{ id: 'Ppu74brp4Kk', title: 'Dina', thumb: '/images/dina.jpg' },
     { id: 'B14ikRKEcy0', title: 'Logan Sullivan', thumb: '/images/logan-sullivan.jpg' },
     { id: 'QKk5Pi01DxM', title: 'Anish', thumb: '/images/anish.jpg' },
-    //{ id: 'oy_qGUIuG24', title: 'Marianne Coaching', thumb: '/images/marianne-coaching.jpg' },
-    //{ id: 'fJ8Vd8ElKnA', title: 'June', thumb: '/images/june.jpg' },
     { id: '9d-MT_86M-w', title: 'Gigi', thumb: '/images/GIGI.jpg' },
   ];
+
+  const videos = items || defaultVideos;
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -92,13 +97,13 @@ const VideoCarousel = () => {
 
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide w-full gap-6 scroll-smooth"
+            className="flex overflow-x-auto scrollbar-hide w-full gap-6 scroll-smooth snap-x snap-mandatory"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {displayVideos.map((video, index) => (
               <div
                 key={index}
-                className="video-item flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[calc(33.333%-1rem)] aspect-video relative rounded-xl overflow-hidden cursor-pointer group/item shadow-lg"
+                className={`video-item flex-shrink-0 w-[85%] sm:w-[48%] ${getWidthClass()} aspect-video relative rounded-xl overflow-hidden cursor-pointer group/item shadow-lg snap-start`}
                 onClick={() => setSelectedVideo(video.id)}
               >
                 <img

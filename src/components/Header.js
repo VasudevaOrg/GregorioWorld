@@ -10,9 +10,21 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Lock scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   const navItems = [
     { name: 'MENTORING', href: '/mentoring' },
@@ -21,6 +33,8 @@ const Header = () => {
     { name: 'ABOUT', href: '/#founders' },
     { name: 'TESTIMONIALS', href: '/testimonials' },
   ];
+
+  const headerHeight = isScrolled ? '70px' : '90px';
 
   return (
     <header
@@ -73,22 +87,23 @@ const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed inset-x-0 top-[70px] bottom-0 bg-white z-[999] lg:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'
+        className={`fixed inset-x-0 bottom-0 bg-white z-[999] lg:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'
           }`}
+        style={{ top: headerHeight, height: `calc(100vh - ${headerHeight})` }}
       >
-        <ul className="flex flex-col p-10 gap-2 text-left pt-12 overflow-y-auto h-full">
+        <ul className="flex flex-col p-10 gap-2 text-left pt-6 overflow-y-auto h-full pb-32">
           {navItems.map((item) => (
             <li key={item.name} className="w-full">
               <Link
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-6 text-[24px] font-bold tracking-[4px] text-[#1a1a1a] border-b border-gray-100 uppercase"
+                className="block py-6 text-[22px] sm:text-[24px] font-bold tracking-[4px] text-[#1a1a1a] border-b border-gray-100 uppercase"
               >
                 {item.name}
               </Link>
             </li>
           ))}
-          <li className="mt-auto pb-20">
+          <li className="mt-8">
             <p className="text-[12px] text-gray-400 tracking-[3px] uppercase">© Gregorio 2026</p>
           </li>
         </ul>
@@ -96,6 +111,5 @@ const Header = () => {
     </header>
   );
 };
-
 export default Header;
 
