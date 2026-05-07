@@ -122,11 +122,11 @@ const breathworkVideos = [
   { id: 'XFb5KxD34oc', title: 'Elisa Rossi', thumb: '/images/elisa-rossi.jpg' },
   { id: '9d-MT_86M-w', title: 'Gigi', thumb: '/images/GIGI.jpg' },
   { id: 'B14ikRKEcy0', title: 'Logan Sullivan', thumb: '/images/logan-sullivan.jpg' },
-  //{ id: 'oy_qGUIuG24', title: 'Marianne', thumb: '/images/marianne-coaching.jpg' },
   { id: 'fJ8Vd8ElKnA', title: 'June', thumb: '/images/june.jpg' },
   { id: 'AndreiYJqUOmlU3uk', title: 'Andrei', thumb: '/images/111.jpg' },
   { id: '12-gBWJ1Nio', title: 'Talia Serene', thumb: '/images/222.jpg' },
   { id: 'Aql1LRpaqFg', title: 'Julian', thumb: '/images/33.jpg' }
+  //{ id: 'oy_qGUIuG24', title: 'Marianne', thumb: '/images/marianne-coaching.jpg' },
 ];
 
 const coachingVideos = [
@@ -140,8 +140,8 @@ const coachingVideos = [
 
 const eventVideos = [
   { id: '_0h0Xp8X_q4', title: 'Andrea & Frank', thumb: '/images/11111.jpg' },
-  { id: 'WDweq_q8UJY', title: 'Somi', thumb: '/images/22222.png' },
-  { id: 'yPfy3B6ihUA', title: 'Cynthia', thumb: '/images/33333.jpg' },
+  { id: 'nkHQeHXEov4', title: 'Somi', thumb: '/images/22222.png' },
+  { id: 'WDweq_q8UJY', title: 'Cynthia', thumb: '/images/33333.jpg' },
   { id: 'yPfy3B6ihUA', title: 'Video 4', thumb: '/images/44444.jpg' }
 ];
 
@@ -468,7 +468,7 @@ export default function TestimonialsPage() {
 
       {/* EVENTS Section */}
       <section className="py-12 md:py-20 bg-white text-center">
-        <h2 className="text-[24px] md:text-[30px] font-bold uppercase text-black mb-8 md:mb-12 tracking-widest text-center">LIVE</h2>
+        <h2 className="text-[24px] md:text-[30px] font-bold uppercase text-black mb-8 md:mb-12 tracking-widest text-center">EVENTS</h2>
         <div className="container mx-auto">
           <VideoCarousel items={eventVideos} onVideoClick={setSelectedVideo} />
         </div>
