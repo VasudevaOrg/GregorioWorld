@@ -169,7 +169,7 @@ export default function MentoringPage() {
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               className="text-[16px] sm:text-[18px] md:text-[24px] lg:text-[26px] xl:text-[28px] text-black/80 font-medium max-w-2xl leading-snug md:leading-normal"
             >
-              Helping people reconnect to joy, freedom, confidence, Connection, and fuller experience of life.
+              Reconnecting to joy, freedom, confidence, real connection, and a fuller experience of life.
             </motion.p>
           </div>
         </div>
