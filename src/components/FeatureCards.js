@@ -38,14 +38,13 @@ const FeatureCards = () => {
           {cards.map((card, index) => (
             <div key={index} className="flex flex-col items-center group">
               {/* Rounded Image Container */}
-              <div className="w-full aspect-[3/4] overflow-hidden rounded-[40px] mb-8 shadow-sm">
+              <div className="w-full min-h-[260px] aspect-[3/4] overflow-hidden rounded-[40px] mb-8 shadow-sm bg-[#f3f2f0]">
                 <img
                   src={card.image}
                   alt={card.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  onError={(e) => {
-                    e.target.src = `https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&w=800&q=80`;
-                  }}
                 />
               </div>
 

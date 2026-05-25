@@ -73,21 +73,21 @@ const TestimonialsCarousel = ({ bgColor = 'bg-white', customItems = null }) => {
       role: 'Impact Investor | TEDx Speaker | Forbes 30 under 30',
       highlight: '‘I had one of the craziest experiences of my life.',
       quote: 'I experienced the oneness I had just read about and felt deeply connected with everyone in the world.’',
-      image: 'images/corousals/ronny-turiaf_blue.jpg'
+      image: 'images/corousals/Copy-of-helena-op.jpg'
     },
     {
       name: 'Andrea Aicaradi',
       role: 'VP of Growth - Neosensory Inc. | MIT Graduate',
       highlight: '‘A transformational experience that will unlock your hidden energy.',
       quote: 'Unlike many ‘holistic’ practices, it’s rooted in science. A mind-bending journey, inspiring even the most skeptical.’',
-      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/andrea-aicardi-testimonial.jpg'
+      image: 'images/corousals/andrea-aicardi-testimonial-op.jpg'
     },
     {
       name: 'Tom Chi',
       role: 'Founding Partner - At One Ventures | former Head of Experience - Google X',
       highlight: '‘Gregorio led a large group into a breathing exercise with a mixture of confidence, care, and joy.',
       quote: 'He is dedicated to being a skillful practitioner and guide.’',
-      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/tom-chi-testimonial.png'
+      image: 'images/corousals/tom-chi-testimonial.jpg'
     },
     // {
     //   name: 'Jennie Tolfa',
@@ -101,7 +101,7 @@ const TestimonialsCarousel = ({ bgColor = 'bg-white', customItems = null }) => {
       role: 'Manager - Microsoft Consulting | former Director SAM - Microsoft',
       highlight: '‘I highly recommend coaching with Gregorio!',
       quote: 'He unlocked new doors and advanced me tremendously. Embraced by a bubble of trust I opened up quickly and effortlessly working through tough questions finding surprisingly simple truths and new approaches that I pursued. A wonderful and enriching experience.’',
-      image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg'
+      image: 'images/corousals/andy-kaul.jpg'
     }
   ];
 

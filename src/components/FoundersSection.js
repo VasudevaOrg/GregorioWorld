@@ -127,31 +127,17 @@ const AboutGregorioModal = ({ isOpen, onClose }) => {
             initial={{ scale: 0.95, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: 20 }}
-            className="relative bg-white rounded-[40px] w-full max-w-4xl min-h-[400px] shadow-2xl flex items-center overflow-hidden"
+            className="relative bg-white rounded-[40px] w-full max-w-4xl shadow-2xl flex flex-col lg:flex-row lg:items-center overflow-hidden max-h-[90vh] lg:max-h-none lg:min-h-[400px]"
           >
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-8 right-8 z-10 text-black/20 hover:text-black transition-colors"
+              className="absolute top-4 lg:top-8 right-4 lg:right-8 z-10 text-black/20 hover:text-black transition-colors"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
 
-            {/* Slider Navigation */}
-            <button
-              onClick={prevSlide}
-              className="absolute left-6 z-10 p-2 text-[#7dc6db] hover:scale-125 transition-transform"
-            >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute right-6 z-10 p-2 text-[#7dc6db] hover:scale-125 transition-transform"
-            >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
-
-            <div className="w-full px-16 md:px-24 py-16 md:py-20 overflow-hidden">
+            <div className="w-full px-14 py-6 lg:px-32 lg:py-16 md:px-24 md:py-20 overflow-y-auto lg:overflow-hidden flex-1">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentSlide}
@@ -161,14 +147,14 @@ const AboutGregorioModal = ({ isOpen, onClose }) => {
                   transition={{ duration: 0.5 }}
                   className="text-center"
                 >
-                  <p className="text-[16px] md:text-[20px] lg:text-[22px] leading-relaxed text-[#333] font-light">
+                  <p className="text-[16px] md:text-[20px] lg:text-[22px] leading-relaxed text-[#333] font-light pt-8 lg:pt-0 pb-12 lg:pb-0">
                     {slides[currentSlide].text}
                   </p>
                 </motion.div>
               </AnimatePresence>
 
               {/* Progress Dots */}
-              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
+              <div className="absolute lg:bottom-8 bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
                 {slides.map((_, i) => (
                   <button
                     key={i}
@@ -179,6 +165,21 @@ const AboutGregorioModal = ({ isOpen, onClose }) => {
                 ))}
               </div>
             </div>
+
+            {/* Slider Navigation */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-0 lg:left-8 top-1/2 -translate-y-1/2 z-20 p-2 text-[#7dc6db] hover:scale-125 transition-transform"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-0 lg:right-8 top-1/2 -translate-y-1/2 z-20 p-2 text-[#7dc6db] hover:scale-125 transition-transform"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
           </motion.div>
         </div>
       )}
@@ -210,9 +211,6 @@ const FoundersSection = () => {
             src="/images/founder.jpg"
             alt="Founders"
             className="absolute inset-0 w-full h-full object-cover"
-            onError={(e) => {
-              e.target.src = 'https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
-            }}
           />
         </div>
 

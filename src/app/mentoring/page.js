@@ -141,9 +141,6 @@ export default function MentoringPage() {
             src="images/mentoringMain.png"
             alt="Mentoring Journey"
             className="w-full h-full object-cover"
-            onError={(e) => {
-              e.target.src = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80';
-            }}
           />
           {/* Light overlay to match the high-key aesthetic of the screenshot */}
           <div className="absolute inset-0 bg-white/10" />
@@ -185,9 +182,6 @@ export default function MentoringPage() {
                   src="images/slim.jpg"
                   alt="Beyond Success"
                   className="w-full h-auto"
-                  onError={(e) => {
-                    e.target.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80';
-                  }}
                 />
               </div>
             </div>
@@ -370,9 +364,6 @@ export default function MentoringPage() {
                   src="images/sitting.jpg"
                   alt="Gregorio Mentoring"
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.src = 'https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&w=1000&q=80';
-                  }}
                 />
               </div>
             </div>
@@ -402,6 +393,8 @@ export default function MentoringPage() {
               <div className="relative rounded-[30px] overflow-hidden shadow-2xl max-w-[650px]">
                 <video
                   src="videos/gather.mp4"
+                  poster="/images/corousals/frontImage.png"
+                  preload="metadata"
                   controls
                   playsInline
                   className="w-full h-auto"
@@ -432,7 +425,7 @@ export default function MentoringPage() {
         items={[
           { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
           { id: 'AJf-fylSIdU', title: 'Anthony Trucks', thumb: '/images/anthony-trucks.jpg' },
-          { id: "yPfy3B6ihUA", title: "Cynthia", thumb: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/cynthia.jpg?fit=533%2C300&ssl=1" },
+          { id: "yPfy3B6ihUA", title: "Cynthia", thumb: "/images/corousals/cynthia.jpg" },
           { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' }
         ]}
       />
@@ -445,9 +438,6 @@ export default function MentoringPage() {
             src="images/COACHING.jpg"
             alt="Mentoring Journey Final"
             className="w-full h-full object-cover"
-            onError={(e) => {
-              e.target.src = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80';
-            }}
           />
           <div className="absolute inset-0 bg-black/10" />
         </div>

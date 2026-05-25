@@ -14,7 +14,7 @@ export default function EventsPage() {
       <section className="relative h-[80vh] md:h-[100vh] flex items-start justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/LIVE-EXPERIENCES-HEADER-PHOTO.jpg"
+            src="images/corousals/LIVE-EXPERIENCES-HEADER-PHOTO.jpg"
             alt="Live Experiences"
             className="w-full h-full object-cover"
           />
@@ -336,7 +336,7 @@ export default function EventsPage() {
             <div className="hidden md:block w-full md:w-[60%] sticky top-32">
               <div className="rounded-[30px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
                 <img
-                  src="https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/IMG_0776.jpg?fit=667%2C500&ssl=1"
+                  src="images/corousals/IMG_0776.jpg"
                   alt="Workshops and Retreats"
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-1000"
                 />
@@ -352,7 +352,7 @@ export default function EventsPage() {
               {/* Mobile Image */}
               <div className="md:hidden mb-10 rounded-[20px] overflow-hidden shadow-xl">
                 <img
-                  src="https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/IMG_0776.jpg?fit=667%2C500&ssl=1"
+                  src="images/corousals/IMG_0776.jpg"
                   alt="Workshops and Retreats"
                   className="w-full h-auto object-cover"
                 />
@@ -545,7 +545,7 @@ export default function EventsPage() {
         items={[
           { id: 'mFiJnsZqwBs', title: 'Reggie Williams', thumb: '/images/reggie-williams.jpg' },
           { id: 'AJf-fylSIdU', title: 'Anthony Trucks', thumb: '/images/anthony-trucks.jpg' },
-          { id: "yPfy3B6ihUA", title: "Cynthia", thumb: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/cynthia.jpg?fit=533%2C300&ssl=1" },
+          { id: "yPfy3B6ihUA", title: "Cynthia", thumb: "/images/corousals/cynthia.jpg" },
           { id: '-Io-4RYDyos', title: 'Rob Palomo', thumb: '/images/rob-palomo.jpg' },
         ]}
       />

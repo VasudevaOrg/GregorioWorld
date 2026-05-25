@@ -12,7 +12,7 @@ const HomeHero = () => {
             alt="YOU DIDN'T COME THIS FAR TO STOP NOW"
             className="w-full h-full object-cover object-[center_5%] transition-opacity duration-700"
             onError={(e) => {
-              e.target.src = 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/IMAGE-1-FOR-HOME-PAGE.jpg?fit=2048%2C1536&ssl=1';
+              e.target.src = '/images/corousals/IMAGE-1-FOR-HOME-PAGE.jpg'; // Fallback image if the main one fails to load
             }}
           />
         </picture>
