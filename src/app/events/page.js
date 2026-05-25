@@ -67,7 +67,7 @@ export default function EventsPage() {
             <div className="hidden md:block w-full md:w-[60%] sticky top-32">
               <div className="rounded-[30px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
                 <img
-                  src="https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/LIVE-BREATHWORK-EXPERIENCES_edit.jpg?fit=752%2C500&ssl=1"
+                  src="images/corousals/LIVE-BREATHWORK-EXPERIENCES_edit.jpg"
                   alt="Live Breathwork Experiences"
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-1000"
                 />
@@ -83,7 +83,7 @@ export default function EventsPage() {
               {/* Mobile Image */}
               <div className="md:hidden mb-10 rounded-[20px] overflow-hidden shadow-xl">
                 <img
-                  src="https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/LIVE-BREATHWORK-EXPERIENCES_edit.jpg?fit=752%2C500&ssl=1"
+                  src="images/corousals/LIVE-BREATHWORK-EXPERIENCES_edit.jpg"
                   alt="Live Breathwork Experiences"
                   className="w-full h-auto object-cover"
                 />
@@ -240,42 +240,42 @@ export default function EventsPage() {
                   role: 'Founder and CEO - Head Alignment Coach | former Chief Possibilities Officer - HeroX',
                   highlight: '‘I don’t say this lightly, breathwork with Gregorio changed my life forever.',
                   quote: 'I saw that there’s more than just our bodies and that I could go there anytime through meditation. Gregorio is a pure-hearted masterful facilitator that will take you to new heights.’',
-                  image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/nadav-wilf-testimonial.jpg?fit=300%2C300&ssl=1'
+                  image: 'images/corousals/nadav-wilf-testimonial-op.jpg'
                 },
                 {
                   name: 'Arancha Muelas',
                   role: 'Director, Brand & Content Strategy - MadBlue Summit | Former Director Global Brand Strategy at Vistaprint',
                   highlight: '‘I witnessed the transformation of a group, leading to a sense of connection as never experienced.',
                   quote: 'Andrea and Gregorio make magic, balancing masculine and feminine energies for co-creation and transformation!’',
-                  image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/arancha.jpg?fit=210%2C210&ssl=1'
+                  image: 'images/corousals/Copy-of-arancha-op.jpg'
                 },
                 {
                   name: 'Andrea Aicardi',
                   role: 'VP of Growth - Neosensory Inc. | MIT Graduate',
                   highlight: '‘A transformational experience that will unlock your hidden energy.',
                   quote: 'Unlike many ‘holistic’ practices, it’s rooted in science. A mind-bending journey, inspiring even the most skeptical.’',
-                  image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/andrea-aicardi-testimonial.jpg?fit=228%2C300&ssl=1'
+                  image: 'images/corousals/andrea-aicardi-testimonial-op.jpg'
                 },
                 {
                   name: 'Helena Wasserman Erikson',
                   role: 'Impact Investor | TEDx Speaker | Forbes 30 under 30',
                   highlight: '‘I had one of the craziest experiences of my life.',
                   quote: 'I experienced the oneness I had just read about and felt deeply connected with everyone in the world.’',
-                  image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/helena.jpg?fit=168%2C200&ssl=1'
+                  image: 'images/corousals/Copy-of-helena-op.jpg'
                 },
                 {
                   name: 'Mario Almondo',
                   role: 'General Manager of Performance Division - Brembo S.p.A | former SVP - Ferrari S.p.A',
                   highlight: '‘You\'ll be part of an energetic experience, delivering an unsuspected intimate and refreshing stream of emotion.',
                   quote: 'Reach a new level of energy, driven by professionals like Gregorio and Andrea. Good food for soul.’',
-                  image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/mario-brembo.jpg?fit=181%2C200&ssl=1'
+                  image: 'images/corousals/mario-almondo-testimonial.jpg'
                 },
                 {
                   name: 'David Block',
                   role: 'Composer/Producer - The Human Experience',
                   highlight: '‘An experience of union, liberation, power, and surrender.',
                   quote: 'Gregorio will guide you on one of the most magical journeys of your life.’',
-                  image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/10/david-block-testimonial.jpg?fit=252%2C300&ssl=1'
+                  image: 'images/corousals/david-block-testimonial-op.jpg'
                 }
               ].map((t, index) => (
                 <div

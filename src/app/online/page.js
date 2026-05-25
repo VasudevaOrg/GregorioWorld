@@ -916,7 +916,7 @@ const OnlineJourney = () => {
         <div className="container mx-auto px-6 max-w-[900px] text-center">
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-[28px] md:text-[36px] font-black text-black uppercase mb-10 tracking-tight">Meet Your Coaches</motion.h2>
           <div className="mb-12">
-            <motion.img initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} src="https://i0.wp.com/gregorio.world/wp-content/uploads/2024/01/coaches.jpg" alt="Andrea and Gregorio" className="w-full h-auto rounded-[32px] shadow-2xl mx-auto max-w-[700px] border-[3px] border-black" />
+            <motion.img initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} src="images/corousals/coaches.jpg" alt="Andrea and Gregorio" className="w-full h-auto rounded-[32px] shadow-2xl mx-auto max-w-[700px] border-[3px] border-black" />
           </div>
           <div className="max-w-[850px] mx-auto text-[16px] md:text-[20px] font-normal text-black leading-snug space-y-6">
             <p>Hi, we’re Andrea and Gregorio, founders of Breathe Your Freedom. We are passionate about helping people become their best selves.</p>

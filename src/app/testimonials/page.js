@@ -96,13 +96,13 @@ const breathworkTestimonials = [
 ];
 
 const coachingTestimonials = [
-  { name: "Jeffrey Perlman", role: "CSO - Mindvalley | former Global CMO - Zumba", text: "Gregorio will guide you through the fear and into the truth. I have come to realize that we are here to learn how to love, period. For those of us that have the courage to truly commit to this mandate, choose Gregorio as your coach.", image: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/jeffrey-perlam.jpg" },
-  { name: "Ronny Turiaf", role: "NBA Champion | former LA Lakers Player", text: "‘Gregorio Avanzini is a warrior of light. I have no doubt he will help humanity going forward, in an amazing matter, by empowering others to reconnect to their hearts and souls. My life changed for the better by crossing paths with him.’", image: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/ronny-turiaf_blue.jpg" },
+  { name: "Jeffrey Perlman", role: "CSO - Mindvalley | former Global CMO - Zumba", text: "Gregorio will guide you through the fear and into the truth. I have come to realize that we are here to learn how to love, period. For those of us that have the courage to truly commit to this mandate, choose Gregorio as your coach.", image: "images/corousals/jeffrey-perlam.jpg" },
+  { name: "Ronny Turiaf", role: "NBA Champion | former LA Lakers Player", text: "‘Gregorio Avanzini is a warrior of light. I have no doubt he will help humanity going forward, in an amazing matter, by empowering others to reconnect to their hearts and souls. My life changed for the better by crossing paths with him.’", image: "images/corousals/ronny-turiaf_blue.jpg" },
   {
     name: "Andy Kaul",
     role: "Manager - Microsoft Consulting I former Director SAM - Microsoft",
     text: "My coaching sessions with Gregorio unlocked new doors for my personal growth and advanced me tremendously - I highly recommend working with him! His presence radiates confidence, sincerity, wisdom, love and purpose. Embraced by a bubble of trust I opened up quickly almost effortlessly worked through tough questions finding surprisingly simple truths and new approaches I was able to pursue. A wonderful and enriching experience.",
-    image: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg"
+    image: "images/corousals/andy-kaul.jpg"
   },
   {
     name: "Arancha Muelas",
@@ -114,7 +114,7 @@ const coachingTestimonials = [
     name: "Mark Lawrence",
     role: "Founder and CEO - SpotHero",
     text: "Coaching with Gregorio has brought new heights to my life. He radiates warmth and energy that allows you to open up to find the inner truth from within. He's incredibly gifted at providing unique insights and shared experiences to guide and enhance your life. He isn't afraid to challenge pre-conceived thoughts and notions in a tactful and unique way, even if it's hard to hear. As new thoughts and \"original content\" are really what helps us evolve and move forward, Gregorio is able to evoke the path from the heart and guide a profound way of thinking that can only be described as \"Gregorio\".",
-    image: "https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/mark-lawrence.jpg"
+    image: "images/corousals/mark-lawrence.jpg"
   }
 ];
 
@@ -233,7 +233,7 @@ export default function TestimonialsPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] md:min-h-[100vh] flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url("https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/header-testimonials.jpg?fit=1920%2C1282&ssl=1")' }}>
+      <section className="relative min-h-[60vh] md:min-h-[100vh] flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url("images/corousals/header-testimonials.jpg")' }}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-white text-[32px] sm:text-[40px] md:text-[60px] lg:text-[72px] font-normal uppercase tracking-[-0.02em] leading-[1] mt-[100px] md:mt-[190px]">testimonials</h1>

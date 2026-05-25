@@ -218,7 +218,7 @@ export default function MentoringPage() {
             role: 'Manager - Microsoft Consulting I former Director SAM - Microsoft',
             highlight: '‘Coaching with Gregorio unlocked new doors, and advanced me tremendously.',
             quote: 'I highly recommend working him! Embraced by a bubble of trust I opened up quickly and effortlessly working through tough questions finding surprisingly simple truths and new approaches that I pursued. A wonderful and enriching experience.’',
-            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/andy-kaul.jpg'
+            image: 'images/corousals/andy-kaul.jpg'
           },
           // {
           //   name: 'Anna Vorrias',
@@ -232,7 +232,7 @@ export default function MentoringPage() {
             role: 'CSO - Mindvalley I former Global CMO - Zumba',
             highlight: '‘Gregorio will guide you through the fear and into the truth.',
             quote: 'I have come to realize that we are here to learn how to love, period. For those of us that have the courage to truly commit to this mandate, choose Gregorio as your coach.’',
-            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/jeffrey-perlam.jpg'
+            image: 'images/corousals/jeffrey-perlam.jpg'
           },
           // {
           //   name: 'Claire Fermont Langlais',
@@ -246,21 +246,21 @@ export default function MentoringPage() {
             role: 'NBA Champion I former LA Lakers Player',
             highlight: '‘Gregorio Avanzini is a warrior of light.',
             quote: 'I have no doubt he will help humanity going forward, in an amazing matter, by empowering others to reconnect to their hearts and souls. My life changed for the better by crossing paths with him.’',
-            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/11/ronny-turiaf_blue.jpg'
+            image: 'images/corousals/ronny-turiaf_blue.jpg'
           },
           {
             name: 'Mark Lawrence',
             role: 'Founder and CEO - SpotHero',
             highlight: '‘Coaching with Gregorio has brought new heights to my life.',
             quote: 'He guides from the heart a profound way of thinking that can only be described as "Gregorio". He exudes warm energy that allows you to open up to find your inner truth.’',
-            image: 'https://i0.wp.com/gregorio.world/wp-content/uploads/2021/12/mark-lawrence.jpg'
+            image: 'images/corousals/mark-lawrence.jpg'
           },
           {
             name: 'Arancha Muelas',
             role: 'Director, Brand & Content Strategy - MadBlue Summit | Former Director Global Brand Strategy at Vistaprint',
             highlight: '‘Gregorio lives in constant flow, projects light to the world and brightens the way for others.',
             quote: 'He is an extraordinary individual that has conquered one of the most important lessons and secrets of life: live from your heart and never close! His story was an inspiration to find my own path.’',
-            image: '/images/Copy-of-arancha-op.jpg'
+            image: 'images/corousals/Copy-of-arancha-op.jpg'
           },
         ]}
       />
