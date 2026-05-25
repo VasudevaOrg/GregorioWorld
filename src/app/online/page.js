@@ -69,7 +69,7 @@ const FreeGiftPopup = ({ isOpen, onClose }) => {
             {/* Left Image */}
             <div className="hidden md:block w-1/2 relative min-h-[500px]">
               <img
-                src="https://i0.wp.com/gregorio.world/wp-content/uploads/2024/01/Screenshot-2023-05-14-143149.jpg?fit=660%2C993&ssl=1"
+                src="images/corousals/modalImage.jpg"
                 alt="Free Gift"
                 className="absolute inset-0 w-full h-full object-cover"
               />
